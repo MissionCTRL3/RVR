@@ -22,7 +22,7 @@ async def accelerometer_handler(accelerometer_data):
     accel = str(accelerometer_data).strip("{'Accelerometer': } ")
     #create a list and split at the comma
     accel_list = accel.split(",")
-    #get just the Y axsis value and stripping out the 'Y': 
+    #get just the Y axis value and stripping out the 'Y': 
     accel = str(accel_list[2]).strip("'Y': ")
     #convert to a float
     accelY = float(accel)
